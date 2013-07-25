@@ -1,6 +1,6 @@
 ﻿using System;
 using Machine.Specifications;
-using Monopoloy.Core;
+using Monopoly.Core;
 
 namespace Monopoly.Tests
 {
