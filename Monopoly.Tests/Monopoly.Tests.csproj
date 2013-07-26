@@ -54,8 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="when_a_player_advances_by_rolling_dice.cs" />
+    <Compile Include="when_playing_the_game.cs" />
+    <Compile Include="when_playing_the_game_after_one_round.cs" />
     <Compile Include="when_starting_a_new_game_of_monopoly_with_fewer_than_two_players.cs" />
     <Compile Include="when_starting_a_new_game_of_monopoly_with_two_players.cs" />
     <Compile Include="when_the_dice_are_rolled.cs" />

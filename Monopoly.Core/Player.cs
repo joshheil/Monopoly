@@ -2,13 +2,11 @@
 {
     public class Player
     {
-        private int _position;
-
-        public int Position { get { return _position; } }
+        public int Position { get; private set; }
 
         public void AdvanceByRollingDice()
         {
-            _position += Dice.Roll();
+            Position += Dice.Roll();
         }
     }
 }

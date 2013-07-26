@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Monopoly.Core
 {
@@ -26,6 +25,12 @@ namespace Monopoly.Core
             {   
                 player.AdvanceByRollingDice();
             }
+        }
+
+        public Snapshot WhereAreWe()
+        {
+            var snapshot = new Snapshot(_players);
+            return snapshot;
         }
     }
 }
