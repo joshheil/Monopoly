@@ -55,8 +55,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="when_a_player_advances_by_rolling_dice.cs" />
     <Compile Include="when_starting_a_new_game_of_monopoly_with_fewer_than_two_players.cs" />
     <Compile Include="when_starting_a_new_game_of_monopoly_with_two_players.cs" />
+    <Compile Include="when_the_dice_are_rolled.cs" />
+    <Compile Include="when_the_game_goes_through_a_round.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

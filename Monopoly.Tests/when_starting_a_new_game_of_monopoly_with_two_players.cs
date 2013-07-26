@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using Machine.Specifications;
 using Monopoly.Core;
 
 namespace Monopoly.Tests
 {
+    [Subject(typeof(Game))]
     public class when_starting_a_new_game_of_monopoly_with_two_players
     {
         private Establish context = () =>
@@ -17,11 +16,7 @@ namespace Monopoly.Tests
 
         private It should_create_a_board = () => _board.ShouldNotBeNull();
 
-        It should_start_both_players_on_the_start_square = () =>
-        {
-            var playersPositions = _game.GetPlayersPositions();
-            playersPositions.All(x => x.Value.Equals(0)).ShouldBeTrue();
-        };
+        It should_start_both_players_on_the_start_square = () => _game.Players.All(x => x.Position.Equals(0)).ShouldBeTrue();
 
         private static Game _game;
         private static Board _board;

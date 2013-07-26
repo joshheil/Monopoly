@@ -4,6 +4,7 @@ using Monopoly.Core;
 
 namespace Monopoly.Tests
 {
+    [Subject(typeof(Game))]
     public class when_starting_a_new_game_of_monopoly_with_fewer_than_two_players
     {
         private Establish context = () =>
