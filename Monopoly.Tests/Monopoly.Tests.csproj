@@ -62,7 +62,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Monopoloy.Core\Monopoly.Core.csproj">
+    <ProjectReference Include="..\Monopoly.Core\Monopoly.Core.csproj">
       <Project>{D7CCC692-5D31-4120-A38A-B8D9E2640397}</Project>
       <Name>Monopoly.Core</Name>
     </ProjectReference>
