@@ -18,6 +18,8 @@ namespace Monopoly.Tests
 
         It should_start_both_players_on_the_start_square = () => _game.Players.All(x => x.Position.Equals(0)).ShouldBeTrue();
 
+        It should_start_both_players_with_1500_dollars = () => _game.Players.All(x => x.Money.Equals(1500)).ShouldBeTrue();
+
         private static Game _game;
         private static Board _board;
     }
